@@ -47,7 +47,7 @@ def get_model_client():
 
 
     # 3. OpenRouter Client
-    openrouter_api_key = os.environ.get("OPENROUTER_API_KEY",'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')
+    openrouter_api_key = os.environ.get("OPENROUTER_API_KEY",'')
     if openrouter_api_key:
         openrouter_client = OpenAIChatCompletionClient(
             model="tngtech/deepseek-r1t2-chimera:free",
