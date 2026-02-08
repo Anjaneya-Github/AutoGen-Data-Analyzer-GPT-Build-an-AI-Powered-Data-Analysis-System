@@ -1,0 +1,4 @@
+FROM python:3-slim
+
+# Pre-install common data analysis libraries
+RUN pip install --no-cache-dir pandas matplotlib seaborn scikit-learn openpyxl
